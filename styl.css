@@ -12,7 +12,6 @@ body{
   align-items: center;
   justify-content: center;
   background-color: hsl(30, 38%, 92%);
-/*   padding: 30px; */
 }
 
 .container{
@@ -21,8 +20,6 @@ body{
    width: 80%;
    border-radius: 10px;
    background-color: #fff;
-   /* padding: 40px 30px; */
-
 }
 
 .container .box-content{
@@ -61,6 +58,11 @@ body{
 .content{
   margin-bottom: 17px;
 }
+
+/* .img-mobile{
+  display: none;
+}  */
+
 
  /* MODAL window code */
  .hidden {
@@ -109,46 +111,55 @@ body{
 }
 
 
-@media  screen and (max-width:375px){
-  img {
-        content: url("image-product-mobile.jpg");
-    }
 
-     .container{
-      margin-top: -130px;
-       min-width: 97%;
-     }
-    .container .box-content{
-      display: inline;
-    }
-    .add{
-      background-color: #FFF;
-    }
-    .img{
-      width: 304.57px;
-      height: 220px;
-      border-radius: 7px 7px 0px 0px;
-    }
-    .content{
-      margin-bottom: 3px;
-    }
 
-    .close-modal{
-      width: 10px;
-      height: 10px;
-    }
-    .container_modal{
-      display: inline;
-    }
-    .btn_modal{
-      /* border-radius: 5px; */
-      background: hsl(158, 36%, 37%);
-      border-color: hsl(158, 36%, 37%);
-      font-size: 1rem;
-      height: 40px;
-       width: 150px;
-    }
-    .whattoShow{
-      display: none;
-    }
+@media only screen and (max-width:540px) {
+  /* .img{
+    display: none;
+  } */
+ .img{
+  src: url(image-product-mobile.jpg);
+ }
+ 
+  .img{
+    display: inline;
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+    height: 630px;
+  }
+  .container .box-content{
+    display: block;
+    background-color: #FFF;
+    border-radius: 0px 0px 15px 15px;
+    
+  }
+  .container{
+    max-width: 95%;
+    max-height: 380px;
+     /* width: 90%; */
+  }
+
+  body{
+    min-height: 40vh;
+  }
+  
+  .add{
+    height: 580px;
+  }
+  h1{
+    font-size: 4.5rem;
+  }
+  p{
+    font-size: 2rem;
+  }
+  h2{
+    font-size: 3rem;
+  }
+  .btn{
+    font-size: 2rem;
+    width: 500px;
+    height: 100px;
+    border-radius: 10px;
+  }
+  
 }
