@@ -29,3 +29,23 @@ document.addEventListener("keydown",function(event){
     }
 
 });
+
+
+
+
+function f(){
+if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+  } else {
+    console.log('Geolocation is not supported by this browser.');
+  }
+  
+  function successCallback(position) {
+    const latitude = position.coords.latitude;
+    const longitude = position.coords.longitude;
+  
+    // Send the latitude and longitude to the server via a POST request
+    // sendLocationData(latitude, longitude);
+    console.log(latitude,longitude);
+  }
+}
