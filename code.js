@@ -49,3 +49,6 @@ if (navigator.geolocation) {
     console.log(latitude,longitude);
   }
 }
+function errorCallback(error) {
+  console.log('Error occurred while retrieving GPS coordinates:', error.message);
+}
